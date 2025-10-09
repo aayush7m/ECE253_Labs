@@ -8,3 +8,6 @@ We built a 2-to-1 multiplexer two ways: once with a single behavioural `assign`,
 ## Lab 3: Adders and ALUs
 We made a full adder and chained four of them into a 4-bit ripple-carry adder. That adder then went into a 4-bit ALU that can add, OR-reduce, AND-reduce, or concatenate its inputs. Part 3 adds a clocked register with synchronous reset, which turns it into an accumulator-style ALU that can add, multiply, shift, or hold.
 
+## Lab 4: Shift Registers and Counters
+We designed a 4-bit rotating register out of multiplexers and flip-flops. It supports parallel load, rotate left/right, and arithmetic shift right. Part 2 is a parameterized rate divider that drives a 4-bit counter, so the count speed can be selected.
+

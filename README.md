@@ -14,3 +14,6 @@ We designed a 4-bit rotating register out of multiplexers and flip-flops. It sup
 ## Lab 6: Intro to RISC-V Assembly
 Our first assembly programs walk through a list ending in -1 to count its elements and add them up, and there's also an optimized version of that loop. Part 2 finds the longest run of consecutive 1s in a word by repeatedly computing `x & (x >> 1)`.
 
+## Lab 7: Subroutines
+We moved the longest-run-of-1s code into a subroutine and called it on every word in a list to find the maximum. Part 2 is an in-place bubble sort that calls a `SWAP` subroutine and stops early once a pass makes no swaps (`part2_pseudocode.s` is our planning sketch).
+

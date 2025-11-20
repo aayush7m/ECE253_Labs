@@ -17,3 +17,6 @@ Our first assembly programs walk through a list ending in -1 to count its elemen
 ## Lab 7: Subroutines
 We moved the longest-run-of-1s code into a subroutine and called it on every word in a list to find the maximum. Part 2 is an in-place bubble sort that calls a `SWAP` subroutine and stops early once a pass makes no swaps (`part2_pseudocode.s` is our planning sketch).
 
+## Lab 8: Memory-Mapped I/O
+We used the DE1-SoC's memory-mapped LEDs, pushbuttons and timer. Part 1 polls the KEYs to set, increment, decrement, or blank a value shown on the LEDs. Parts 2 and 3 are an 8-bit binary counter that a button press starts and stops, timed first by a software delay loop and then by the hardware interval timer.
+

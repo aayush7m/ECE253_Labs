@@ -20,3 +20,5 @@ We moved the longest-run-of-1s code into a subroutine and called it on every wor
 ## Lab 8: Memory-Mapped I/O
 We used the DE1-SoC's memory-mapped LEDs, pushbuttons and timer. Part 1 polls the KEYs to set, increment, decrement, or blank a value shown on the LEDs. Parts 2 and 3 are an 8-bit binary counter that a button press starts and stops, timed first by a software delay loop and then by the hardware interval timer.
 
+## Lab 9: Interrupts
+We rebuilt the Lab 8 counter so it runs on interrupts instead of polling. The CSRs (`mstatus`, `mie`, `mtvec`) are set up so that timer interrupts advance the count, pushbutton interrupts toggle run/pause, and a handler reads `mcause` to pick the right ISR.
